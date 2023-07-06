@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marda portfolio</title>
+  <link rel="stylesheet" href="./src/statics/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+  <header class="header">
+    <!--MENU -->
+    <div class="switches">
+      <div id="toggle-theme" class="toggle-theme">
+        <img src="./src/assets/icons/sun-solid.svg" alt="Icon" id="toggle-icon" class="toggle-theme__icon">
+        <p id="toggle-text" class="toggle-theme__text">Light Mode</p>
+      </div>
+    </div>
+    <div id="languages" class="languages">
+      <div class="languages-container" data-language="english">
+        <img src="./src/assets/images/languages/english.svg" class="flags" alt="Englang-flag">
+      </div>
+      <div class="languages-container" data-language="french">
+        <img src="./src/assets/images/languages/french.svg" class="flags" alt="France-flag">
+      </div>
+      <div class="languages-container" data-language="spanish">
+        <img src="./src/assets/images/languages/spanish.svg" class="flags" alt="Spain-flag">
+      </div>
+      <!-- <a>
+        <img src="./src/assets/images/languages/english.svg" class="flags" alt="Englang-flag">
+      </a>
+      <a>
+        <img src="./src/assets/images/languages/french.svg" class="flags" alt="France-flag">
+      </a>
+      <a>
+        <img src="./src/assets/images/languages/spanish.svg" class="flags" alt="Spain-flag">
+      </a> -->
+    </div>
+    
+    <!-- <nav>
+      <ul>
+        <li><a href="./src/pages/aboutme.html">About me</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href=""></a>Habilities</li>
+      </ul>
+    </nav> -->
+    <!-- <div id="toggle-colors" class="colors">
+      <div data-color="hsl(226, 80%, 43%)" class="colors__item colors__item--blue"></div>
+      <div data-color="hsl(352, 65%, 24%)" class="colors__item colors__item--red"></div>
+      <div data-color="hsl(182, 78%, 43%)" class="colors__item colors__item--cyan"></div>
+      <div data-color="hsl(266, 77%, 47%)" class="colors__item colors__item--purple"></div>
+    </div> -->
+  </header>
+
+  <main class="main">
+    
+    <!-- Intro -->
+    <section class="intro">
+      <div id="englishVersion" class="container-eng">
+        <h1 class="change-color">Marco Antonio</h1>
+        <p data-section="profile" data-value="intro">
+          Hi! I am Marco, a back-end web developer, runner, hiker, and many other things.
+        </p>
+        <p data-section="profile" data-value="description">
+          I love create solutions with tecnology and this is the reason I choose this way.
+          I like reading fiction books and non-fiction books. Also hike and run in the nature. 
+        </p>
+        <p data-section="profile" data-value="studies">
+          I studied in Academlo's Bootcamp where I learned Front-End and Back-End.
+        </p>
+        <p data-section="profile" data-value="greetings">Welcome! Hope you enjoy it!</p>
+      </div>
+    </section>
+    
+    <!-- Skills -->
+    <section class="links">
+      <h2>Technical Skills</h2>
+      <div class="tech-images-frontend">
+        <img src="./src/assets/images/css.svg" class="tech-images" alt="CSS-image">
+        <img src="./src/assets/images/git.svg" class="tech-images" alt="Git-image">
+        <img src="./src/assets/images/react.svg" class="tech-images" alt="React-image">
+        <img src="./src/assets/images/github.svg" class="tech-images" alt="Github-image">
+        <img src="./src/assets/images/html.svg" class="tech-images" alt="HTLM-image">
+      </div>
+
+      <div class="tech-images-container">
+        <img src="./src/assets/images/node.svg" class="tech-images__nj" alt="Nodejs-image">
+        <img src="./src/assets/images/javascript.svg" class="tech-images__js" alt="Javascript-image">
+        <img src="./src/assets/images/typescript.svg" class="tech-images__ts" alt="Typescript-image"> 
+      </div>
+
+      <div class="tech-images-backend">
+        <img src="./src/assets/images/express.svg" class="tech-images color-change" alt="Express-image">
+        <img src="./src/assets/images/postgresql.svg" class="tech-images" alt="Postgresql-image">
+        <img src="./src/assets/images/nodejs.svg" class="tech-images" alt="Nodejs-image">
+        <img src="./src/assets/images/sequelize.svg" class="tech-images" alt="Sequelize-image">
+        <img src="./src/assets/images/mongodb.svg" class="tech-images" alt="MongoDb-image">
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="card">
+          <div class="card-front">
+            <img src="./src/assets/images/postgresql.svg" class="projectone" alt="">
+            <h4>Film Directors</h4>
+            <p>Tecnologies: NodeJs, Express, Postgres, Sequelize, Swagger.</p>
+          </div>
+          <div class="card-back">
+            <h4>Project Description</h4>
+            <p>This project is about films, we can create, read, update and deletete films.</p>
+            <div class="deploy-container">
+              <div class="deploy-frontend">
+                <a href="https://film-directors.onrender.com/api/v1/directors">
+                  <img src="./src/assets/images/git.svg" class="backend-project" alt="OnRender-image">
+                </a>
+                <p>Front-End Deploy</p>
+              </div>
+              <div class="deploy-repository">
+                <a href="https://github.com/MarkMarda/film-directors">
+                  <img src="./src/assets/images/github.svg" class="backend-project" alt="Github-image">
+                </a>
+                <p>Back-End Repository</p>
+              </div>
+              <div class="deploy-backend">
+                <a href="https://film-directors.onrender.com/api/v1/directors">
+                  <img src="./src/assets/images/git.svg" class="backend-project" alt="OnRender-image">
+                </a>
+                <p>Back-End Deploy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projects-container">
+        <div class="card">
+          <div class="card-front">
+            <img src="./src/assets/images/postgresql.svg" class="projectone" alt="">
+            <h4>Indie Films</h4>
+            <p>Tecnologies: NodeJs, Express, MongoDB, Mongoose, Swagger.</p>
+          </div>
+          <div class="card-back">
+            <h4>Project Description</h4>
+            <p>This project is about films, we can create, read, update and deletete films.</p>
+            <div class="deploy-container">
+              <div class="deploy-frontend">
+                <a href="https://film-directors.onrender.com/api/v1/directors">
+                  <img src="./src/assets/images/git.svg" class="backend-project" alt="OnRender-image">
+                </a>
+                <p>Front-End Deploy</p>
+              </div>
+              <div class="deploy-repository">
+                <a href="https://github.com/MarkMarda/Indie-Films">
+                  <img src="./src/assets/images/github.svg" class="backend-project" alt="Github-image">
+                </a>
+                <p>Back-End Repository</p>
+              </div>
+              <div class="deploy-backend">
+                <a href="https://film-directors.onrender.com/api/v1/directors">
+                  <img src="./src/assets/images/git.svg" class="backend-project" alt="OnRender-image">
+                </a>
+                <p>Back-End Deploy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projects-container">
+        <div class="card">
+          <div class="card-front">
+            <img src="./src/assets/images/postgresql.svg" class="projectone" alt="">
+            <h4>Other Project</h4>
+            <p>Tecnologies: NodeJs, Express, Postgres, Sequelize, Swagger.</p>
+          </div>
+          <div class="card-back">
+            <h4>Project Description</h4>
+            <p>This project is about films, we can create, read, update and deletete films.</p>
+            <div class="deploy-container">
+              <div class="deploy-frontend">
+                <a href="https://film-directors.onrender.com/api/v1/directors">
+                  <img src="./src/assets/images/git.svg" class="backend-project" alt="OnRender-image">
+                </a>
+                <p>Front-End Deploy</p>
+              </div>
+              <div class="deploy-repository">
+                <a href="https://github.com/MarkMarda/film-directors">
+                  <img src="./src/assets/images/github.svg" class="backend-project" alt="Github-image">
+                </a>
+                <p>Back-End Repository</p>
+              </div>
+              <div class="deploy-backend">
+                <a href="https://film-directors.onrender.com/api/v1/directors">
+                  <img src="./src/assets/images/git.svg" class="backend-project" alt="OnRender-image">
+                </a>
+                <p>Back-End Deploy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projects-container">
+        <div class="card">
+          <div class="card-front">
+            <img src="./src/assets/images/postgresql.svg" class="projectone" alt="">
+            <h4>Other Project</h4>
+            <p>Tecnologies: NodeJs, Express, Postgres, Sequelize, Swagger.</p>
+          </div>
+          <div class="card-back">
+            <h4>Project Description</h4>
+            <p>This project is about films, we can create, read, update and deletete films.</p>
+            <div class="deploy-container">
+              <div class="deploy-frontend">
+                <a href="https://film-directors.onrender.com/api/v1/directors">
+                  <img src="./src/assets/images/git.svg" class="backend-project" alt="OnRender-image">
+                </a>
+                <p>Front-End Deploy</p>
+              </div>
+              <div class="deploy-repository">
+                <a href="https://github.com/MarkMarda/film-directors">
+                  <img src="./src/assets/images/github.svg" class="backend-project" alt="Github-image">
+                </a>
+                <p>Back-End Repository</p>
+              </div>
+              <div class="deploy-backend">
+                <a href="https://film-directors.onrender.com/api/v1/directors">
+                  <img src="./src/assets/images/git.svg" class="backend-project" alt="OnRender-image">
+                </a>
+                <p>Back-End Deploy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <h3>Contact</h3>
+    <div class="footer-contacts">
+      <a href="https://github.com/MarkMarda">
+        <img src="./src/assets/images/github.svg" class="contact-image" alt="Github-image">
+      </a>
+      <a href="http://www.linkedin.com/in/marda/">
+        <img src="./src/assets/images/linkedin.svg" class="contact-image" alt="LinkedIn-image">
+      </a>
+      <a href="mailto:marda_da-capo@hotmail.com">
+        <img src="./src/assets/images/email.svg" class="contact-image" alt="Email-image">
+      </a>
+    </div>
+  </footer>
+
+  <script src="./src/index.js"></script>
+</body>
+</html>

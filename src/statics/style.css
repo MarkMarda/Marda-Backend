@@ -1,0 +1,372 @@
+:root {
+  /* --primary-color: hsl(214,84%, 56%); */
+  --primary-color: hsl(226, 80%, 43%);
+  --text-color: hsl(0, 0%, 31%);
+  --bg-color: hsl(0, 0%, 90%);
+  --bg-card-color: hsl(0, 0%, 98%); 
+  --transition: color 0.1s, background-color 0.2s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: var(--transition);
+  font-family: 'Roboto Mono', monospace;
+  text-align: justify;
+}
+
+body.dark {
+  --text-color: hsl(0, 0%, 83%);
+  --bg-color: hsl(0, 0%, 15%);
+  --bg-card-color: hsl(0, 0%, 20%); 
+}
+
+/* ---------- Header ---------- */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* height: 50px; */
+  height: 5%;
+  padding: 0 1.5em;
+  background-color: var(--bg-card-color);
+  transition: var(--transition);
+}
+
+.switches {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: blueviolet; */
+}
+
+.toggle-theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.toggle-theme__icon {
+  margin-right: 0.5em;
+  width: 20px;
+}
+
+.toggle-theme__text {
+  font-size: 0.8rem;
+}
+
+.languages {
+  margin-left: 40%;
+  /* background-color: aqua; */
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.languages-container {
+  display: flex;
+}
+
+.flags {
+  width: 60%;
+  cursor: pointer;
+  background-color: blue;
+}
+
+ul {
+  list-style: none;
+}
+
+/* .colors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  width: 100px;
+}
+
+.colors__item {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--text-color);
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.colors__item--blue {
+  --primary-color: hsl(226, 80%, 43%);
+}
+
+.colors__item--red {
+  --primary-color: hsl(352, 65%, 24%);
+}
+
+.colors__item--cyan {
+  --primary-color: hsl(182, 78%, 43%);
+}
+
+.colors__item--purple {
+  --primary-color: hsl(266, 77%, 47%);
+} */
+
+/* .change-color {
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+No va */
+
+/* ---------- Main ---------- */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10%;
+  /* background-color: rgb(170, 119, 42); */
+  flex-flow:column
+}
+
+/* ---------- Main-Intro ---------- */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* min-width: 100%; */
+  /* background-color: aquamarine; */
+}
+
+/* ---------- Main-Skills ---------- */
+.links {
+  /* background-color: aquamarine; */
+  margin-top: 1em;
+}
+
+.tech-images-container {
+  display: grid;
+  position: relative;
+  padding: 2rem;
+  grid-template-columns: 50% 50%;
+  /* background-color: brown; */
+  /* mix-blend-mode: multiply; */
+}
+
+.tech-images__js {
+  width: 50%;
+  grid-column-start: 1;
+  margin-top: 25%;
+  margin-left: 25%;
+  animation: turn1 10s linear infinite;
+}
+
+.tech-images__nj {
+  width: 50%;
+  grid-column-start: 1;
+  margin-left: 75%;
+  animation: turn1 10s linear infinite;
+}
+
+@keyframes turn1 {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.tech-images__ts {
+  width: 50%;
+  grid-column-start: 2;
+  margin-top: 25%;
+  margin-left: 25%;
+  animation: turn2 10s linear infinite;
+}
+
+@keyframes turn2 {
+  to {
+    transform: rotate(-1turn);
+  }
+}
+
+.tech-images {
+  width: 20%;
+}
+
+.tech-images-frontend {
+  display: flex;
+}
+
+.tech-images-backend {
+  display: flex;
+  margin-top: 1em;
+  /* color: #139999; */
+}
+
+.color-change {
+  /* filter: invert(51%) sepia(15%) saturate(1682%) hue-rotate(131deg) brightness(93%) contrast(88%); */
+  filter: invert(43%) sepia(94%) saturate(396%) hue-rotate(131deg) brightness(94%) contrast(92%);
+}
+
+/* ---------- Main-Projects ---------- */
+.projects {
+  margin-top: 2em;
+  background-color: aquamarine;
+  width: 100%;
+}
+
+.projects-container {
+  display: flex;
+  background-color: blueviolet;
+  margin: 1em;
+  margin-left: 5%;
+  border-radius: 1em; /* TODO: corregir tamano de altura y ancho*/
+  /* border: .5em solid hsl(352, 65%, 24%); */
+  /* width: 190px;
+  height: 254px; */
+  width: 90%;
+  height: 300px;
+}
+
+/* .projects-container:hover {
+  border: .5em solid hsl(352, 65%, 24%);
+} */
+
+.card {
+  background-color: darkgrey;
+  margin: .5em;
+  position: relative;
+  width: 100%;
+  height: 94%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  /* display: flex; */
+}
+
+.projects-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid coral;
+  border-radius: .5em; 
+}
+
+.card-front {
+  /* background-color: coral; */
+  background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+     rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+  color: coral;
+}
+
+.card-back {
+  /* background-color: aqua; */
+  background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
+     bisque 40%, rgb(255, 185, 160) 78%);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.projectone {
+  width: 60%;
+  /* background-color: blue; */
+  margin-top: 10%;
+  margin-left: 20%;
+  border-radius: .1em;
+}
+
+.deploy-container {
+  display: grid;
+  position: relative;
+  /* padding: 2rem; */
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  /* background-color: brown; */
+  /* mix-blend-mode: multiply; */
+  font-size: .7em;
+}
+
+.deploy-frontend {
+  grid-column-start: 1;
+}
+
+.deploy-repository {
+  grid-column-start: 2;
+}
+
+.deploy-backend {
+  grid-column-start: 3;
+}
+
+.backend-project {
+  width: 45%;
+  cursor: pointer;
+  /* background-color: blue; */
+}
+/* ---------- Footer ---------- */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5%;
+  padding: 0 1.5em;
+  margin-bottom: 0;
+  background-color: var(--bg-card-color);
+  transition: var(--transition);
+}
+
+.footer-contacts {
+  display: flex;
+  margin-left: 20%;
+  background-color: blueviolet;
+}
+
+.contact-image {
+  width: 50%;
+  cursor: pointer;
+  background-color: blue;
+}
+
+/* calbiar las media query
+tamano de fuente */
+
+/* ---------- Screens ---------- */
+@media screen and (min-width: 200px) and (max-width: 320px) {
+  /* ---------- Header ---------- */
+  .flags {
+    width: 75%;
+    /* cursor: pointer; */
+    /* background-color: blue; */
+    /* creo es el container */
+  }
+
+  /* ---------- Footer ---------- */
+  .contact-image {
+    width: 55%;
+    /* cursor: pointer; */
+    /* background-color: blue; */
+  }
+
+  /* creo deberia poner un max width para que no se aplque nada
+  menos de eso */
+}
+
+/* Tablets */
+@media screen and (max-width: 960px) {
+  
+}
+
+/* Laptops */
+@media screen and (max-width: 480px) {
+  
+}
