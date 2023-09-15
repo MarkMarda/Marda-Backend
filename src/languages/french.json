@@ -1,8 +1,39 @@
 {
   "profile": {
-    "intro":"Salut! Je suis Marco, develeupeur web, runner, hiker et d'autres choses.",
-    "description": "J'aime creer des solutions avec la technologie, c'est pour ça que j'ai choisis c'est chemin. J'aime lire livres de sujet scientifique et aussi de la litteratture. Je m'amuse en faissant des promenades et le runnin dans la nature.",
-    "studies": "J'ai etudie dans le Bootcamp de Academlo ou j'ai appris le Front-End et le Back-end.",
-    "greetings": "Bienvennu(e)! Amuse-toi!"
-  } 
+    "intro":"Salut! Je suis Marco, develeupeur web back-end, runner, hiker et d'autres choses.",
+    "description": "J'aime créer des solutions avec la technologie, c'est pour ça que j'ai choisis c'est chemin. J'aime lire livres de sujet scientifique et aussi de la litteratture. Je m'amuse en faissant des promenades et le running dans la nature.",
+    "studies": "J'ai étudié dans un Bootcamp où j'ai appris le Front-End et le Back-end.",
+    "greetings": "Bienvennu(e)! J'espere tu profites de mon travail!"
+  },
+
+  "skills": {
+    "title": "Compétences Techniques"
+  },
+
+  "projects": {
+    "title": "Projets",
+    "title-card-back": "Description du Projet"
+  },
+
+  "proyect-1": {
+    "title-card-front": "Pigmeo",
+    "tecnologies": "Technologies: NodeJs, Express, TypeScript, MongoDB, Mongoose, Swagger.",
+    "description": "Ce app wallet c'est un travail en equipe où on peut faire beaucoup d'activites. Lisez plus en Repository."
+  }, 
+
+  "proyect-2": {
+    "title-card-front": "Cinéastes",
+    "tecnologies": "Technologies: NodeJs, Express, Postgres, Sequelize, Swagger.",
+    "description": "Ce projet est sur des cinéastes, nous pouvons créer, lire, actualiser et effacer des cinéastes. Lisez plus en Back-End Repository."
+  },
+
+  "proyect-3": {
+    "title-card-front": "Films d'Auteur",
+    "tecnologies": "Technologies: NodeJs, Express, MongoDB, Mongoose, Swagger, Cloudinary.",
+    "description": "Ce projet est sur des films, nous pouvons créer, lire, actualiser et effacer des films. Lisez plus en Back-End Repository."
+  },
+
+  "contact": {
+    "title": "Contact"
+  }
 }

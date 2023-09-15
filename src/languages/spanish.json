@@ -1,8 +1,39 @@
 {
   "profile": {
-    "intro":"Hola! Soy Marco, desarrollador web, runner, senderista y algunas otras cosas mas.",
-    "description": "Amo crear soluciones con la tencnologia y esta es la razon por la cual decidi escoger este camino. Me gusta leer libros tanto de ficcion como de no ficcion. Tambien disfruto de hacer senderismo y correr en la naturaleza.",
-    "studies": "Estudie en el Bootcamp de Academlo donde aprendi Front-End y Back-End.",
+    "intro":"¡Hola! Soy Marco, desarrollador web back-end, runner, senderista y algunas otras cosas más.",
+    "description": "Amo crear soluciones con la tencnología y esta es la razón por la cual decidí escoger este camino. Me gusta leer libros tanto de ficción como de no ficción. También disfruto de hacer senderismo y correr en la naturaleza.",
+    "studies": "Estudié en un Bootcamp donde aprendí Front-End y Back-End. Posteriormente continué preparándome más con otros cursos. He participado en algunos proyectos donde he trabajado en equipo.",
     "greetings": "Bienvenido(a)! Espero disfrutes de mis proyectos!"
-  } 
+  },
+
+  "skills": {
+    "title": "Habilidades Técnicas"
+  },
+
+  "projects": {
+    "title": "Proyectos",
+    "title-card-back": "Descripción del Proyecto"
+  },
+
+  "proyect-1": {
+    "title-card-front": "Pigmeo",
+    "tecnologies": "Tecnologías: NodeJs, Express, TypeScript, MongoDB, Mongoose, Swagger.",
+    "description": "Esta wallet app es un trabajo colaborativo donde se puede registrar un usuario y el mismo puede usar algunas funcionalidades. Lea más en Repository."
+  }, 
+
+  "proyect-2": {
+    "title-card-front": "Directores de Cine",
+    "tecnologies": "Tecnologías: NodeJs, Express, Postgres, Sequelize, Swagger.",
+    "description": "Este proyecto es sobre directores de cine, podemos crear, leer, actualizar y borrar los directores. Lea más en Back-End Repository."
+  },
+
+  "proyect-3": {
+    "title-card-front": "Películas de Autor",
+    "tecnologies": "Tecnologías: NodeJs, Express, MongoDB, Mongoose, Swagger, Cloudinary.",
+    "description": "Este proyecto es sobre películas, podemos crear, leer, actualizar y borrar películas. Lea más en Back-End Repository."
+  },
+
+  "contact": {
+    "title": "Contacto"
+  }
 }
