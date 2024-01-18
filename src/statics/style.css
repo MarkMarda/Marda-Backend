@@ -30,7 +30,7 @@ body.dark {
   position: sticky;
   top: 0em;
   z-index: 1;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
   height: 5%;
   padding: 0 1.5em;
   background-color: var(--bg-card-color);
@@ -80,12 +80,116 @@ ul {
 }
 
 /* -------------------- Main -------------------- */
+.image-background {
+  background-image: url("/src/assets/images/matrix-356024_640.jpg");
+  background-size: cover;
+  color: hsl(0, 0%, 83%);
+  height: 25em;
+}
+
+.text-animation-1 {
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 70%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+.text-animation-2 {
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: slidein2;
+}
+
+@keyframes slidein2 {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: 60%;
+  }
+}
+
+.text-animation-3 {
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: slidein3;
+}
+
+@keyframes slidein3 {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: 85%;
+  }
+}
+
+.text-animation-4 {
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-name: slidein4;
+}
+
+@keyframes slidein4 {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: 63%;
+  }
+}
+
+.text-animation-5 {
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: slidein5;
+}
+
+@keyframes slidein5 {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: 63%;
+  }
+}
+
+.text-animation-6 {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: slidein6;
+}
+
+@keyframes slidein6 {
+  from {
+    margin-left: 70%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
 .main {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 10%;
-  flex-flow:column
+  margin-top: 0%;
+  flex-flow:column;
 }
 
 /* ---------- Main-Intro ---------- */

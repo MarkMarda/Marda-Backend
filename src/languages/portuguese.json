@@ -1,0 +1,39 @@
+{
+  "profile": {
+    "intro":"¡Olá! Eu sou Marco, desenvolvedor web back-end, runner, caminhante e algumas outras coisas mais.",
+    "description": "Gosto de criar soluções com a tencnologia e esta é a razão pela qual decidi escolher este caminho. Eu gosto de ler livros de ficção e não-ficção. Também gosto de fazer caminhadas e correr na natureza.",
+    "studies": "Estudei num Bootcamp onde aprendi Front-End e Back-End. Após,  continuei me preparando mais com outros cursos. Participei em alguns projetos onde trabalhei em time.",
+    "greetings": "Bem-vindo(a)! Espero que você usufrua meus projetos!"
+  },
+
+  "skills": {
+    "title": "Competências Técnicas"
+  },
+
+  "projects": {
+    "title": "Projetos",
+    "title-card-back": "Descrição do Projeto"
+  },
+
+  "proyect-1": {
+    "title-card-front": "Pigmeo",
+    "tecnologies": "Tecnologias: NodeJs, Express, TypeScript, MongoDB, Mongoose, Swagger.",
+    "description": "Este Wallet app é um trabalho colaborativo onde você pode registrar um usuário e ele pode usar algumas funcionalidades. Leia mais no Repository."
+  }, 
+
+  "proyect-2": {
+    "title-card-front": "Diretores de Cinema",
+    "tecnologies": "Tecnologias: NodeJs, Express, Postgres, Sequelize, Swagger.",
+    "description": "Este projeto é sobre diretores de cinema, podemos criar, ler, atualizar e apagar os diretores. Leia mais em Back-End Repository."
+  },
+
+  "proyect-3": {
+    "title-card-front": "Filmes de Autor",
+    "tecnologies": "Tecnologias: NodeJs, Express, MongoDB, Mongoose, Swagger, Cloudinary.",
+    "description": "Este projeto é sobre filmes, podemos criar, ler, atualizar e apagar os filmes. Leia mais em Back-End Repository."
+  },
+
+  "contact": {
+    "title": "Contato"
+  }
+}
